@@ -1,0 +1,130 @@
+/*
+ * Styling for page that contains all my previous project
+ *
+ * Copyright 2014 Jordan Hennell
+ */
+
+/* STYLING */
+
+/* the whole body of the document */
+body {
+    background-color: yellow;
+    overflow:hidden
+}
+
+/* header that sticks to the top of the page */
+#header-container {
+    background: none repeat scroll 0 0 rgba(83, 177, 69, 0.88);
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    z-index: 1000;
+
+    background: red;
+}
+
+/* text within the header */
+#title-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* content under the header, ie. everything else */
+#under-header {
+    height: auto !important;
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: 100%;
+    padding: 0 5px;
+}
+
+/* add spacing to under-header clear header */
+#push-top {
+    height: 110px;
+}
+
+/* a short paragraph summarising the site */
+#introduction {
+    background: pink;
+}
+
+/* contains the menu */
+#menu-container {
+    background: orange;
+}
+
+    /* unordered menu list, remove indentation */
+    #menu-container ul {
+        padding: 0;
+    }
+    
+    /* list items in the menu */
+    #menu-container li {
+        display: block;
+        background: white;
+        border: 2px purple solid;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        float: left;
+        margin: 4px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s linear;
+        width: 100%;
+    }
+        
+        /* increase size of menu item when hovered over */
+        #menu-container li:hover {
+            background-color: grey;
+            transform: scale(1.2);
+            z-index: 2;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* anchor that fills entire menu item area */
+        #menu-container li a {
+            display: block;
+            width: 100%;
+            height: 100px;
+            font-size: 30px;
+            opacity: 0.8;
+            text-align: center;
+            transition: all 0.4s linear;
+        }
+            /* grow the anchor link when it is hovered over */
+            #menu-container li:hover a {
+                animation: 0.4s ease growText;
+                color: #ccff00;
+            }
+            
+        /* content to only show when the menu is hovered over */
+        #menu-container li .show-on-hover {
+            opacity: 0;
+            margin-top: 50px;
+            transition: margin-top 0.5s linear;
+        }
+            
+        /* show on hover */
+            #menu-container li:hover .show-on-hover{
+                opacity: 1;
+                margin-top: 10px;
+                transform: scale(1);
+            }
+
+        
+
+
+/* ANIMATIONS */
+
+/* grow content from a scale of 0 */
+@keyframes growText {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
