@@ -8,29 +8,38 @@
 
 /* the whole body of the document */
 body {
-    background-color: yellow;
-    overflow:hidden
+    background-color: rgb(207, 207, 226); /* light grey blue */
+    color: rgb(0, 2, 100); /* dark blue */
+    font-family: "Roboto";
 }
 
+/* remove styling on links */
+a {
+    text-decoration: none;
+}
+    
 /* header that sticks to the top of the page */
 #header-container {
-    background: none repeat scroll 0 0 rgba(83, 177, 69, 0.88);
-    height: 100px;
-    left: 0;
+    background: rgba(0, 2, 100, 0.8); /* dark blue */
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
     margin: 0 auto;
     position: fixed !important;
+    text-align: center;
+    left: 0;
     right: 0;
     top: 0;
     max-width: 100%;
     z-index: 1000;
-
-    background: red;
 }
 
 /* text within the header */
 #title-text {
     max-width: 800px;
-    margin: 0 auto;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 3px auto;
 }
 
 /* content under the header, ie. everything else */
@@ -40,21 +49,20 @@ body {
     max-width: 800px;
     min-height: 100%;
     padding: 0 5px;
+    animation: 0.8s linear fade-in;
 }
 
 /* add spacing to under-header clear header */
 #push-top {
-    height: 110px;
+    height: 40px;
 }
 
 /* a short paragraph summarising the site */
 #introduction {
-    background: pink;
-}
-
-/* contains the menu */
-#menu-container {
-    background: orange;
+    background: white;
+    padding: 10px 20px 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
     /* unordered menu list, remove indentation */
@@ -66,10 +74,9 @@ body {
     #menu-container li {
         display: block;
         background: white;
-        border: 2px purple solid;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         float: left;
-        margin: 4px;
+        margin: 4px 0px;
         overflow: hidden;
         position: relative;
         transition: all 0.3s linear;
@@ -78,7 +85,7 @@ body {
         
         /* increase size of menu item when hovered over */
         #menu-container li:hover {
-            background-color: grey;
+            background-color: rgba(0, 2, 100, 0.8); /* dark blue */
             transform: scale(1.2);
             z-index: 2;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -86,45 +93,74 @@ body {
         
         /* anchor that fills entire menu item area */
         #menu-container li a {
+            color: rgb(0, 2, 100); /* dark blue */
             display: block;
+            padding: 10px;
             width: 100%;
             height: 100px;
             font-size: 30px;
-            opacity: 0.8;
-            text-align: center;
+            transition: all 0.4s linear;
+        }
+        
+        /* image from font to use within link to show type of project */
+        #menu-container li .font-image {
+            font-family: "Web Glyphs";
+            margin-top: 30px;
+            color: rgba(0, 2, 100, 0.7); /* dark blue */
+            font-size: 80px;
+            position: absolute;
             transition: all 0.4s linear;
         }
             /* grow the anchor link when it is hovered over */
+            #menu-container li:hover .font-image {
+                color: rgba(255, 255, 255, 0.2);
+                font-size: 240px;
+                margin-top: -80px;
+            }
+            /* grow the anchor link when it is hovered over */
             #menu-container li:hover a {
-                animation: 0.4s ease growText;
-                color: #ccff00;
+                font-size: 40px;
+                margin: 5px 0;
+                color: white;
             }
             
-        /* content to only show when the menu is hovered over */
-        #menu-container li .show-on-hover {
-            opacity: 0;
-            margin-top: 50px;
-            transition: margin-top 0.5s linear;
-        }
-            
-        /* show on hover */
-            #menu-container li:hover .show-on-hover{
-                opacity: 1;
-                margin-top: 10px;
-                transform: scale(1);
+            /* content to only show when the menu is hovered over */
+            #menu-container li .show-on-hover {
+                opacity: 0;
+                margin-top: 50px;
+                transition: margin-top 0.5s linear;
+                color: white;
             }
 
-        
-
-
+                /* show on hover */
+                #menu-container li:hover .show-on-hover{
+                    opacity: 1;
+                    margin-top: 15px;
+                    font-size: 16px;
+                }
+    
 /* ANIMATIONS */
 
-/* grow content from a scale of 0 */
-@keyframes growText {
+/* fade in everything under the header */
+@keyframes fade-in {
     0% {
-        transform: scale(0);
+        opacity: 0;
     }
     100% {
-        transform: scale(1);
+        opacity: 1;
     }
+}
+
+/* FONTS */
+
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url('fonts/roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+/* Roboto */
+@font-face {
+  font-family: "Web Glyphs";
+  src: url('fonts/roboto/webhostinghub-glyphs.ttf') format("truetype");
 }
