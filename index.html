@@ -39,7 +39,7 @@
                 <ul>
                     
                     <li>
-                        <label class="menu-item" for="modal-1">
+                        <label class="menu-item" for="trip-planner">
                             <span class="font-image">&#xF01C;</span>
                             <span class="subtitle">Web</span>
                             Test 1
@@ -89,19 +89,48 @@
             
             <!-- modals -->
             <!-- based on Shady Alzayat's input/label modal method -->
-            <input class="modal-state" id="modal-1" type="checkbox" />
-            <div class="modal">
+            <input class="modal-state" id="trip-planner" type="checkbox" />
+            <div id="trip-planner" class="modal">
                 <div class="modal-inner">
-                    <label class="modal-close" for="modal-1">&#x00D7;</label>
-                    <h2>Caaaats FTW!</h2>
-                    <img src="http://i.imgur.com/HnrkBwB.gif" alt="" />
+                    <label class="modal-close" for="trip-planner">&#x00D7;</label>
+                    <img src="images/tripPlannerLogo.png" class="title-image" alt="Trip Planner Logo" />
+                    <img class="cloud small" src="images/cloudSmall.png" style="float:right;" />
+
+                    <h3 class="overview">Overview</h3>
                     <p>
-                        Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, 
-                        sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus 
-                        rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora 
-                        torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis 
-                        nisi eget imperdiet.
+                        TripPlanner is a service that allows people to register and plan holidays 
+                        by adding activities that are linked to major cities in Australia. When 
+                        users sign-up, they can choose whether they want to be able to add 
+                        activities to the system as well as being able to plan trips. Once 
+                        registered, users begin by entering the <i>Trip Planning</i> page and 
+                        clicking <i>New Trip</i>. Once pressed, the cities are dynamically displayed 
+                        from the database as link buttons. Users select the city they want to visit 
+                        and then activities bound to that city are displayed, dynamically from the 
+                        database. Users select with activities they want to add to their trip, and 
+                        these are written to and stored in a trip text file in their user 
+                        directory. Once finished they click <i>End Trip</i> and from there they can 
+                        view the trip with all the activities in from their <i>Saved Activities</i> 
+                        page. If a user is an activity provider, they can add activities to cities 
+                        through the <i>Create Activity</i> page. Users input information into the 
+                        fields and then this is added to the database. If a user wants to change 
+                        their password then they can do so through the <i>Account</i> page. This is 
+                        also displays if the user is an administrator for TripPlanner or not.
                     </p>
+                    
+                    <img class="cloud" src="images/cloudBig.png" />
+                    <h3>Test Users</h3>
+                    <p>
+                        <b>Admin:</b></br>
+                            Username: admin123<br />
+                            Password: admin123<br /><br />
+                        <b>General User:</b></br>
+                            Username: test123<br />
+                            Password: test123<br /><br />
+                    </p>
+                    
+                    <a class="button" href="#">Go To Trip Planner</a>
+                    
+                    <div class="push-small"></div>
                 </div>
             </div>
             
