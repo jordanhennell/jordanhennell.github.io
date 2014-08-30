@@ -52,9 +52,10 @@ a {
     animation: 0.8s linear fade-in;
 }
 
-/* add spacing to under-header clear header */
-#push-top {
+/* adds vertical spacing */
+.push {
     height: 40px;
+    opacity: 0;
 }
 
 /* a short paragraph summarising the site */
@@ -64,10 +65,16 @@ a {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
+/* contains the entire menu */
+#menu-container {
+    padding-bottom: 20px;
+    overflow: visible;
+}
 
     /* unordered menu list, remove indentation */
     #menu-container ul {
         padding: 0;
+        margin: 0;
     }
     
     /* list items in the menu */
@@ -95,49 +102,71 @@ a {
         #menu-container li a {
             color: rgb(0, 2, 100); /* dark blue */
             display: block;
-            padding: 10px;
+            padding: 0 10px 10px 10px;
             width: 100%;
             height: 100px;
             font-size: 30px;
             transition: all 0.4s linear;
         }
-        
-        /* image from font to use within link to show type of project */
-        #menu-container li .font-image {
-            font-family: "Web Glyphs";
-            margin-top: 30px;
-            color: rgba(0, 2, 100, 0.7); /* dark blue */
-            font-size: 80px;
-            position: absolute;
-            transition: all 0.4s linear;
-        }
-            /* grow the anchor link when it is hovered over */
-            #menu-container li:hover .font-image {
-                color: rgba(255, 255, 255, 0.2);
-                font-size: 240px;
-                margin-top: -80px;
-            }
+               
             /* grow the anchor link when it is hovered over */
             #menu-container li:hover a {
                 font-size: 40px;
                 margin: 5px 0;
                 color: white;
+                padding: 0px 20px 20px 20px;
             }
-            
-            /* content to only show when the menu is hovered over */
-            #menu-container li .show-on-hover {
-                opacity: 0;
-                margin-top: 50px;
-                transition: margin-top 0.5s linear;
-                color: white;
+        
+        /* image from font to use within link to show type of project */
+        #menu-container li .font-image {
+            font-family: "Web Glyphs";
+            margin-top: 35px;
+            color: rgba(0, 2, 100, 0.7); /* dark blue */
+            font-size: 60px;
+            position: absolute;
+            transition: all 0.4s linear;
+        }
+        
+            /* move the image when list item is hovered over */
+            #menu-container li:hover .font-image {
+                color: rgba(255, 255, 255, 0.2); /* white */
+                font-size: 180px;
+                margin: -50px 0px 0px 60%;
+                transform: rotate(15deg);
             }
 
-                /* show on hover */
-                #menu-container li:hover .show-on-hover{
-                    opacity: 1;
-                    margin-top: 15px;
-                    font-size: 16px;
-                }
+        /* content to describe what area this project relates to */
+        #menu-container li .subtitle {
+            color: rgba(0, 2, 100, 0.7); /* dark blue */
+            position: absolute;
+            font-size: 26px;
+            top: 55%;
+            left: 80px;
+            transition: all 0.4s linear;
+        }
+        
+            /* rearrage content when menu item is hovered over */
+            #menu-container li:hover .subtitle {
+                color: white;
+                left: 20px;
+                font-size: 20px;
+                top: 50%;
+            }
+            
+        /* content to only show when the menu is hovered over */
+        #menu-container li .show-on-hover {
+            opacity: 0;
+            margin-top: 80px;
+            transition: margin-top 0.5s linear;
+            color: white;
+        }
+
+            /* show on hover */
+            #menu-container li:hover .show-on-hover{
+                opacity: 0.5;
+                margin-top: 35px;
+                font-size: 16px;
+            }
     
 /* ANIMATIONS */
 
@@ -162,5 +191,5 @@ a {
 /* Roboto */
 @font-face {
   font-family: "Web Glyphs";
-  src: url('fonts/roboto/webhostinghub-glyphs.ttf') format("truetype");
+  src: url('fonts/webhostinghub-glyphs/webhostinghub-glyphs.ttf') format("truetype");
 }
