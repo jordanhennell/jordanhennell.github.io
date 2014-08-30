@@ -20,6 +20,7 @@
 
         <div id="under-header">
             
+            <div class="push"></div>
             
             <h2>What Is This?</h2>
             <div id="introduction">
@@ -38,54 +39,72 @@
                 <ul>
                     
                     <li>
-                        <a href="#">
+                        <label class="menu-item" for="modal-1">
                             <span class="font-image">&#xF01C;</span>
-                            <span class="subtitle">Website</span>
+                            <span class="subtitle">Web</span>
                             Test 1
-                            <div class="show-on-hover">
+                            <span class="show-on-hover">
                                 Click for more information...
-                            </div>
-                        </a>
+                            </span>
+                        </label>
                     </li>
                     
                     <li>
-                        <a href="#">
-                            <span class="font-image small">&#xF0D5;</span>
-                            <span class="subtitle">Desktop Program</span>
+                        <label class="menu-item" for="modal-1">
+                            <span class="font-image">&#xF0D5;</span>
+                            <span class="subtitle">Desktop</span>
                             Test 2
-                            <div class="show-on-hover">
+                            <span class="show-on-hover">
                                 Click for more information...
-                            </div>
-                        </a>
+                            </span>
+                        </label>
                     </li>
                     
                     <li>
-                        <a href="#">
-                            <span class="font-image small">&#xF0E6;</span>
-                            <span class="subtitle">Mobile App</span>
+                        <label class="menu-item" for="modal-1">
+                            <span class="font-image">&#xF0E6;</span>
+                            <span class="subtitle">Mobile</span>
                             Test 3
-                            <div class="show-on-hover">
+                            <span class="show-on-hover">
                                 Click for more information...
-                            </div>
-                        </a>
+                            </span>
+                        </label>
                     </li>
                     
                     <li>
-                        <a href="#">
+                        <label class="menu-item" for="modal-1">
                             <span class="font-image">&#xF2D1;</span>
                             <span class="subtitle">Game</span>
                             Test 4
-                            <div class="show-on-hover">
+                            <span class="show-on-hover">
                                 Click for more information...
-                            </div>
-                        </a>
+                            </span>
+                        </label>
                     </li>
                     
                     <li class="push"></li>
                     
                 </ul>
             </div>
-
+            
+            <!-- modals -->
+            <!-- based on Shady Alzayat's input/label modal method -->
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="modal-1">&#x00D7;</label>
+                    <h2>Caaaats FTW!</h2>
+                    <img src="http://i.imgur.com/HnrkBwB.gif" alt="" />
+                    <p>
+                        Aliquam in sagittis nulla. Curabitur euismod diam eget risus venenatis, 
+                        sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus 
+                        rutrum velit. Nunc vel mauris dolor. Class aptent taciti sociosqu ad litora 
+                        torquent per conubia nostra, per inceptos himenaeos. Aliquam fringilla quis 
+                        nisi eget imperdiet.
+                    </p>
+                </div>
+            </div>
+            
         </div>
     </body>
 

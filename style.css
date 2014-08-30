@@ -31,7 +31,7 @@ a {
     right: 0;
     top: 0;
     max-width: 100%;
-    z-index: 1000;
+    z-index: 3;
 }
 
 /* text within the header */
@@ -99,7 +99,7 @@ a {
         }
         
         /* anchor that fills entire menu item area */
-        #menu-container li a {
+        #menu-container li .menu-item {
             color: rgb(0, 2, 100); /* dark blue */
             display: block;
             padding: 0 10px 10px 10px;
@@ -110,11 +110,12 @@ a {
         }
                
             /* grow the anchor link when it is hovered over */
-            #menu-container li:hover a {
+            #menu-container li:hover .menu-item {
                 font-size: 40px;
                 margin: 5px 0;
                 color: white;
                 padding: 0px 20px 20px 20px;
+                cursor: pointer;
             }
         
         /* image from font to use within link to show type of project */
@@ -155,22 +156,83 @@ a {
             
         /* content to only show when the menu is hovered over */
         #menu-container li .show-on-hover {
+            color: white;
             opacity: 0;
             margin-top: 80px;
             transition: margin-top 0.5s linear;
-            color: white;
+            font-size: 16px;
+            display: block;
         }
 
             /* show on hover */
             #menu-container li:hover .show-on-hover{
                 opacity: 0.5;
                 margin-top: 35px;
-                font-size: 16px;
             }
     
+/* MODAL */
+/* Based on Shady Alzayat's modal on CodePen: http://codepen.io/ShadyAlzayat/pen/LEDJg */
+
+/* the container for the modal */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    transition: all 0.5s ease;
+    z-index: 3;
+
+}
+
+/* the state of the modal, a checkbox */
+.modal-state {
+    display: none;
+}
+
+    /* if the state of the modal is checked, then show the modal */
+    .modal-state:checked + .modal {
+        opacity: 1;
+        visibility: visible;
+    }
+
+/* move modal to middle of screen */
+.modal-state:checked + .modal .modal-inner {
+  top: 0;
+}
+
+/* the content within the modal */
+.modal-inner {
+    overflow: auto;
+    position: absolute;
+    background: white;
+    top: -30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 10px 30px;
+    transition: top 0.5s ease;
+}
+
+/* the close button/web-font */
+.modal-close {
+    font-family: "Web Glyphs";
+    color: rgb(0, 2, 100); /* dark blue */
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    cursor: pointer;
+}
+            
 /* ANIMATIONS */
 
-/* fade in everything under the header */
+/* fade in content using opacity */
 @keyframes fade-in {
     0% {
         opacity: 0;
