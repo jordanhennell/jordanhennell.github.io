@@ -228,6 +228,12 @@ a {
     transition: all 0.5s ease;
 }
 
+
+    /* imgage within modal */
+    .modal-inner img {
+        max-width: 100%;
+    }
+
 /* the close button/web-font */
 .modal-close {
     font-family: "Web Glyphs";
@@ -239,13 +245,13 @@ a {
 }
 
 /* trip planner modal */
-#trip-planner * {
+#trip-planner-modal * {
     background-color: #82CAFA; /* light sky blue */
     color: white;
 }
 
     /* anchor link top act as button */
-    #trip-planner .button {
+    #trip-planner-modal .button {
         background-color: white;
         color: rgb(130, 202, 250); /* light sky blue */
         padding: 5px;
@@ -254,7 +260,7 @@ a {
     }
     
         /* grey out colours */
-        #trip-planner .button:hover {
+        #trip-planner-modal .button:hover {
             color: white;
             background-color: rgb(91, 141, 178); /* light sky blue + grey */
             padding: 6px;
@@ -262,12 +268,12 @@ a {
         }
     
     /* cloud images within trip planner */
-    #trip-planner .cloud {
+    #trip-planner-modal .cloud {
         float: right;
     }
     
     /* cloud images within trip planner */
-    #trip-planner .cloud.small {
+    #trip-planner-modal .cloud.small {
         margin-right: 40%;
     }
     
@@ -277,28 +283,46 @@ a {
     }
 
 /* disaster management modal */
-#disaster-management * {
+#disaster-management-modal * {
     background-color: #efeeef; /* light grey */
     color: #333; /* dark grey */
 }
 
     /* container for all videos */
-    #disaster-management .videos-container {
+    #disaster-management-modal .videos-container {
         background-color: #e2e2e2; /* medium grey */
         margin: 0 -30px;
         padding: 10px 30px;
     }
     
         /* container for all videos */
-        #disaster-management .videos-container * {
+        #disaster-management-modal .videos-container * {
             background-color: #e2e2e2; /* medium grey */
         }
 
     /* disaster management videos */
-    #disaster-management iframe {
+    #disaster-management-modal iframe {
         width: 90%;
         height: 360px;
     }
+    
+/* reverse recipe modal */
+#reverse-recipe-modal .modal-inner {
+    background-color: rgb(206, 0, 12); /* deep red */
+    color: white;
+    font-family: "Architect's Daughter";
+}
+
+/* reverse recipe modal */
+#reverse-recipe-modal .modal-close {
+    color: white;
+}
+
+/* reverse recipe modal */
+#reverse-recipe-modal .title-image {
+    max-width: 80%;
+    padding-top: 20px;
+}
     
     
     
@@ -334,8 +358,14 @@ a {
     src: url('fonts/roboto/Roboto-Regular.ttf') format("truetype");
 }
 
-/* Roboto */
+/* Web Glyphs */
 @font-face {
     font-family: "Web Glyphs";
     src: url('fonts/webhostinghub-glyphs/webhostinghub-glyphs.ttf') format("truetype");
+}
+
+/* Architect's Daughter */
+@font-face {
+    font-family: "Architect's Daughter";
+    src: url('fonts/architects-daughter/ArchitectsDaughter.ttf');
 }

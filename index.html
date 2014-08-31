@@ -72,10 +72,10 @@
                     </li>
                     
                     <li>
-                        <label class="menu-item" for="coming-soon">
-                            <span class="font-image">&#xF0D5;</span>
-                            <span class="subtitle">Desktop</span>
-                            Test 2
+                        <label class="menu-item" for="reverse-recipe">
+                            <span class="font-image">&#xF0E6;</span>
+                            <span class="subtitle">iOS Application</span>
+                            Reverse Recipe
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
@@ -84,20 +84,22 @@
                     
                     <li>
                         <label class="menu-item" for="coming-soon">
-                            <span class="font-image">&#xF0E6;</span>
-                            <span class="subtitle">Mobile</span>
-                            Test 3
+                            <span class="font-image">&#xF0D5;</span>
+                            <span class="subtitle">C++ Desktop Program</span>
+                            Shortest Distance
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
                         </label>
                     </li>
+                    
+
                     
                     <li>
                         <label class="menu-item" for="coming-soon">
                             <span class="font-image">&#xF2D1;</span>
                             <span class="subtitle">Game</span>
-                            Test 4
+                            Professor Anomalous' Oddity Zoo
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
@@ -114,7 +116,7 @@
             
             <!-- Coming Soon -->
             <input class="modal-state" id="coming-soon" type="checkbox" />
-            <div id="coming-soon" class="modal">
+            <div id="coming-soon-modal" class="modal">
                 <div class="modal-inner">
                     <label class="modal-close" for="coming-soon">&#x00D7;</label>
                     <h2>Coming Soon...</h2>
@@ -124,11 +126,11 @@
             
             <!-- TripPlanner -->
             <input class="modal-state" id="trip-planner" type="checkbox" />
-            <div id="trip-planner" class="modal">
+            <div id="trip-planner-modal" class="modal">
                 <div class="modal-inner">
                     <label class="modal-close" for="trip-planner">&#x00D7;</label>
-                    <img src="images/tripPlannerLogo.png" class="title-image" alt="Trip Planner Logo" />
-                    <img class="cloud small" src="images/cloudSmall.png" style="float:right;" />
+                    <img alt="Trip Planner Logo" src="images/tripPlannerLogo.png" alt="Trip Planner Logo" />
+                    <img alt="Small Cloud" src="images/cloudSmall.png" class="cloud small" />
 
                     <h3 class="overview">Overview</h3>
                     <p>
@@ -147,7 +149,7 @@
                     <h3>Technologies</h3>
                     <p> ASP.NET (C# and VB), MSSQL, IIS, HTML, CSS, JavaScript</p>
                     
-                    <img class="cloud" src="images/cloudBig.png" />
+                    <img alt="Big Cloud" class="cloud" src="images/cloudBig.png" />
                     <h3>Test Users</h3>
                     <p>
                         <b>Activity Provider:</b></br>
@@ -158,7 +160,7 @@
                             Password: test123<br /><br />
                     </p>
                     
-                    <a class="button" href="http://www.tripplanner.somee.com/">
+                    <a class="button" href="http://www.tripplanner.somee.com/" target="_blank">
                         Go To Trip Planner
                     </a>
                     
@@ -168,7 +170,7 @@
             
             <!-- Disaster Management -->
             <input class="modal-state" id="disaster-management" type="checkbox" />
-            <div id="disaster-management" class="modal">
+            <div id="disaster-management-modal" class="modal">
                 <div class="modal-inner">
                     <label class="modal-close" for="disaster-management">&#x00D7;</label>
                     
@@ -209,6 +211,46 @@
                         
                         <h4>Manage Personnel </h4>
                         <iframe src="//www.youtube.com/embed/5mTnjPq5vM4" frameborder="0" allowfullscreen></iframe>
+
+                        <div class="push-small"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Disaster Management -->
+            <input class="modal-state" id="reverse-recipe" type="checkbox" />
+            <div id="reverse-recipe-modal" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="reverse-recipe">&#x00D7;</label>
+                    
+                    <img class="title-image" alt="Reverse Recipe Title" src ="images/reverseRecipeTitle.png" />
+                    
+                    <h2 class="overview">Overview</h2>
+                    <p>
+                        The Reverse Recipe iOS app allows users to search for recipes by 
+                        ingredient. It makes use of the approximately 50,000 recipes available at 
+                        the <i>Food Network</i> (2014) website via a web scraper that was developed 
+                        as part of a previous project. The design and development process was
+                        carried out in conjunction with a separate team responsible for the Android 
+                        version of the app. 
+                    </p>
+                    <p>
+                        This iOS application was developed by four students for INB301 at QUT 
+                        during Semester 1, 2014. 
+                    </p>
+                    
+                    <h2>Technologies</h2>
+                    <p> 
+                        Objective-C, RestFUL Web Service (PHP/JSON), Graphic Creation
+                    </p>
+                    
+                    <img alt="Reverse Recipe Logo" src="images/reverseRecipeLogo.png" />
+                    
+                    <div class="videos-container">
+                        <h3>Video</h3>
+                        
+                        <p>Coming Soon...</p>
+
 
                         <div class="push-small"></div>
                     </div>
