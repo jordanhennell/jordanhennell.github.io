@@ -17,7 +17,13 @@ body {
 a {
     text-decoration: none;
     transition: color 0.2s  ease;
+    -webkit-transition: color 0.2s  ease;
+    -moz-transition: color 0.2s  ease;
+    -o-transition: color 0.2s  ease;
     transition: background-color 0.2s  ease;
+    -webkit-transition: background-color 0.2s  ease;
+    -moz-transition: background-color 0.2s  ease;
+    -o-transition: background-color 0.2s  ease;
 }
 
 /* header that sticks to the top of the page */
@@ -52,6 +58,9 @@ a {
     min-height: 100%;
     padding: 0 5px;
     animation: 0.8s linear fade-in;
+    -webkit-animation: 0.8s linear fade-in;
+    -moz-animation: 0.8s linear fade-in;
+    -o-animation: 0.8s linear fade-in;
 }
 
 /* adds vertical spacing */
@@ -95,6 +104,9 @@ a {
         overflow: hidden;
         position: relative;
         transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
         width: 100%;
     }
 
@@ -115,6 +127,9 @@ a {
             height: 100px;
             font-size: 30px;
             transition: all 0.4s linear;
+            -webkit-transition: all 0.4s linear;
+            -moz-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
         }
 
             /* grow the anchor link when it is hovered over */
@@ -134,6 +149,9 @@ a {
             font-size: 60px;
             position: absolute;
             transition: all 0.4s linear;
+            -webkit-transition: all 0.4s linear;
+            -moz-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
         }
 
             /* move the image when list item is hovered over */
@@ -152,6 +170,9 @@ a {
             top: 55%;
             left: 80px;
             transition: all 0.4s linear;
+            -webkit-transition: all 0.4s linear;
+            -moz-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
         }
 
             /* rearrage content when menu item is hovered over */
@@ -168,6 +189,9 @@ a {
             opacity: 0;
             margin-top: 80px;
             transition: margin-top 0.5s linear;
+            -webkit-transition: margin-top 0.5s linear;
+            -moz-transition: margin-top 0.5s linear;
+            -o-transition: margin-top 0.5s linear;
             font-size: 16px;
             display: block;
         }
@@ -183,6 +207,9 @@ a.button {
     padding: 5px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     }
     
         /* grey out colours */
@@ -206,6 +233,9 @@ a.button {
     left: 0;
     background: rgba(0, 0, 0, .9);
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     z-index: 3;
 
 }
@@ -240,6 +270,9 @@ a.button {
     margin: auto;
     padding: 10px 30px;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 
@@ -256,6 +289,20 @@ a.button {
     right: 10px;
     top: 6px;
     cursor: pointer;
+    transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+}
+
+    /* modal close when hovered should change to red */
+   .modal-close:hover {
+        color: red;
+    }
+    
+/* overview section in modal */
+.overview {
+    clear: both;
 }
 
 /* trip planner modal */
@@ -264,45 +311,88 @@ a.button {
     color: white;
 }
 
-    /* anchor link top act as button */
-    #trip-planner-modal .button {
-        background-color: white;
-        color: rgb(130, 202, 250); /* light sky blue */
-    }
-    
-        /* grey out colours */
-        #trip-planner-modal .button:hover {
-            color: white;
-            background-color: rgb(91, 141, 178); /* light sky blue + grey */
-        }
-    
-    /* cloud images within trip planner */
-    #trip-planner-modal .cloud {
-        float: right;
-    }
-    
-    /* cloud images within trip planner */
-    #trip-planner-modal .cloud.small {
-        margin-right: 40%;
-    }
-    
-    /* heading within trip planner */
-    .overview {
-        clear: both;
+    /* modal close at top of trip planner */
+    #trip-planner-modal .modal-close:hover {
+        color: red;
     }
 
+/* anchor link top act as button */
+#trip-planner-modal .button {
+    background-color: white;
+    color: rgb(130, 202, 250); /* light sky blue */
+}
+
+    /* grey out colours */
+    #trip-planner-modal .button:hover {
+        color: white;
+        background-color: rgb(91, 141, 178); /* light sky blue + grey */
+    }
+
+/* cloud images within trip planner */
+#trip-planner-modal .cloud {
+    float: right;
+}
+
+/* cloud images within trip planner */
+#trip-planner-modal .cloud.small {
+    margin-right: 40%;
+}
+
 /* disaster management modal */
-#disaster-management-modal * {
+#disaster-management-modal .modal-inner {
     background-color: #efeeef; /* light grey */
     color: #333; /* dark grey */
 }
 
+/* disaster management modal top section surrounding header */
+#disaster-management-modal .top-of-modal {
+    background-color: white;
+    margin: -10px -30px 0 -30px;
+    padding: 20px 30px 10px 30px;
+}
+
+    /* disaster management modal top section surrounding header */
+    #disaster-management-modal .top-of-modal h2 {
+        margin: 0;
+    }
+
+/* draws a circle */
+#disaster-management-modal .circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+}
+
+        /* draws a circle that is light grey */
+        #disaster-management-modal .circle.light-grey {
+            background-color: #efeeef; /* light grey */
+            margin-top: -39px;
+        }
+
+
+    /* modal close at top of disaster management */
+    #disaster-management-modal .modal-close:hover {
+        color: red;
+    }
+
+/* overview heading for disaster management */
+#disaster-management-modal .overview {
+    margin-top: 10px;
+}
+    
 /* container for all videos */
 #disaster-management-modal .videos-container {
     background-color: #e2e2e2; /* medium grey */
     margin: 0 -30px;
     padding: 10px 30px;
 }
+
+    /* everything within video container */
+    #disaster-management-modal .videos-container * {
+        background-color: #e2e2e2; /* medium grey */
+    }
 
 /* disaster management videos */
 #disaster-management-modal iframe {
@@ -322,6 +412,11 @@ a.button {
     color: white;
 }
 
+/* modal close at top of reverse recipe */
+    #reverse-recipe-modal .modal-close:hover {
+        color: black;
+    }
+
 /* reverse recipe modal */
 #reverse-recipe-modal .title-image {
     max-width: 80%;
@@ -340,7 +435,69 @@ a.button {
         color: rgb(0, 2, 100); /* dark blue */
     }
     
-/* styling for smaller screen */
+/* odd zoo modal */
+#odd-zoo-modal .modal-inner {
+    background-color: rgb(133, 197, 68); /* grass green */
+    color: black;
+}
+
+    /* odd zoo headings */
+    #odd-zoo-modal .modal-inner h3 {
+        font-family: "Showcard Gothic";
+        font-weight: lighter;
+    }
+
+    /* odd zoo modal components with purple text */
+    #odd-zoo-modal .modal-inner * {
+        color: rgb(132, 19, 72); /* purple */
+    }
+    
+    /* modal close at top of odd zoo */
+    #odd-zoo-modal .modal-close:hover {
+        color: red;
+    }
+
+/* links in zoo modal */
+#odd-zoo-modal a {
+    background-color: rgb(248, 177, 31); /* gold */
+}
+        
+        /* reverse recipe modal */
+    #odd-zoo-modal a:hover {
+        background-color: rgb(93, 138, 47); /* grass green + grey */
+        color: rgb(248, 177, 31); /* gold */
+    }
+
+/* food tab modal */
+#food-tab-modal .modal-inner {
+    background-color: rgb(249, 244, 229); /* cream */
+    color: rgb(177, 12, 39); /* light red */
+    font-family: "Cambria";
+}
+    
+    /* food tab modal close icon */
+    #food-tab-modal .modal-close {
+        color: rgb(177, 12, 39); /* light red */
+    }
+    
+        /* food tab modal close icon when hovered over*/
+        #food-tab-modal .modal-close:hover{
+            color: red;
+        }
+        
+    /* food tab modal close icon */
+    #food-tab-modal .button {
+        background-color: rgb(177, 12, 39); /* light red */
+        color:  rgb(249, 244, 229); /* cream */
+    }
+    
+    /* food tab modal close icon */
+    #food-tab-modal .button:hover {
+        color: rgb(177, 12, 39); /* light red */
+        background-color:  rgb(174, 170, 160); /* cream + grey */
+    }
+    
+/* styling for smaller screens */
 
 @media screen and (max-width: 900px) {
 	
@@ -442,4 +599,16 @@ a.button {
 @font-face {
     font-family: "Architect's Daughter";
     src: url('fonts/architects-daughter/ArchitectsDaughter.ttf');
+}
+
+/* Showcard Gothic */
+@font-face {
+    font-family: "Showcard Gothic";
+    src: url('fonts/showcard-gothic/SHOWG.TTF');
+}
+
+/* Cambria */
+@font-face {
+    font-family: "Cambria";
+    src: url('fonts/cambria/Cambria.ttf');
 }

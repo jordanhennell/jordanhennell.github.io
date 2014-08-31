@@ -11,6 +11,7 @@
         <title>Jordan Hennell</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="images/icon.png">
     </head>
 
     <body>
@@ -93,13 +94,22 @@
                         </label>
                     </li>
                     
-
-                    
                     <li>
-                        <label class="menu-item" for="coming-soon">
+                        <label class="menu-item" for="odd-zoo">
                             <span class="font-image">&#xF2D1;</span>
                             <span class="subtitle">Game</span>
                             Professor Anomalous' Oddity Zoo
+                            <span class="show-on-hover">
+                                Click for more information...
+                            </span>
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="menu-item" for="food-tab">
+                            <span class="font-image">&#xF0C4;</span>
+                            <span class="subtitle">Business Presentation</span>
+                            Food Tab
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
@@ -174,7 +184,11 @@
                 <div class="modal-inner">
                     <label class="modal-close" for="disaster-management">&#x00D7;</label>
                     
-                    <h2>Disaster Management</h2>
+                    <div class="top-of-modal">
+                        <h2>Disaster Management</h2>
+                    </div>
+                    
+                    <div class="circle"></div>
                     
                     <h3 class="overview">Overview</h3>
                     <p>
@@ -192,26 +206,33 @@
                     
                     <h3>Technologies</h3>
                     <p> ASP.NET (C#), MSSQL, IIS, HTML, CSS, JavaScript, Google Maps</p>
-                    
+
                     <div class="videos-container">
+                        
+                        <div class="circle light-grey"></div>
+                        
                         <h3>Videos</h3>
 
                         <h4>Register</h4>
                         <iframe src="//www.youtube.com/embed/S9RzyWN2q-g" frameborder="0" allowfullscreen></iframe>
-
+                        <br />
+                        
                         <h4>Log In</h4>
                         <iframe src="//www.youtube.com/embed/4OvlXDipLb0" frameborder="0" allowfullscreen></iframe>
-
-
+                        <br />
+                        
                         <h4>Report An Incident</h4>
                         <iframe src="//www.youtube.com/embed/flcCTZVk7SM" frameborder="0" allowfullscreen></iframe>
-
+                        <br />
+                        
                         <h4>Edit & Resolve An Incident </h4>
                         <iframe src="//www.youtube.com/embed/u-ce4aILkLU" frameborder="0" allowfullscreen></iframe>
+                        <br />
                         
                         <h4>Manage Personnel </h4>
                         <iframe src="//www.youtube.com/embed/5mTnjPq5vM4" frameborder="0" allowfullscreen></iframe>
-
+                        <br />
+                        
                         <div class="push-small"></div>
                     </div>
                 </div>
@@ -245,25 +266,20 @@
                     </p>
                     
                     <img alt="Reverse Recipe Logo" src="images/reverseRecipeLogo.png" />
-                    
-                    <div class="videos-container">
-                        <h3>Video</h3>
-                        
-                        <p>Coming Soon...</p>
 
-
-                        <div class="push-small"></div>
-                    </div>
+                    <div class="push-small"></div>
                 </div>
             </div>
             
-            <!-- Reverse Recipe -->
+            <!-- Shortest Distance -->
             <input class="modal-state" id="shortest-distance" type="checkbox" />
             <div id="shortest-distance-modal" class="modal">
                 <div class="modal-inner">
                     <label class="modal-close" for="shortest-distance">&#x00D7;</label>
                     
-                    <h2 class="overview">Overview</h2>
+                    <h2>Shortest Distance</h2>
+                    
+                    <h3 class="overview">Overview</h3>
                     <p>
                         Road networks are modeled utilising Graph Theory. For a set of locations 
                         and possible road segments which have been randomly generated,the route of 
@@ -279,18 +295,96 @@
                         Semester 1, 2014. 
                     </p>
                     
-                    <h2>Technologies</h2>
+                    <h3>Technologies</h3>
                     <p> 
                         C++
-                    </p>
+                    </p><br />
                     
                     <a class="button" href="https://www.dropbox.com/s/9kyc9hxiqvufkgm/ShortestDistanceSource.zip?dl=1">
-                        Download source
+                        Download Source Code
                     </a>
+
+                    <div class="push-small"></div>                   
+                </div>                
+            </div>
+                
+            <!-- Professor Anomalous' Oddity Zoo -->
+            <input class="modal-state" id="odd-zoo" type="checkbox" />
+            <div id="odd-zoo-modal" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="odd-zoo">&#x00D7;</label>
                     
+                    <img alt="Professor Anomalous' Oddity Zoo Title" src="images/oddZooTitle.png" />
                     
+                    <h3 class="overview">Overview</h3>
+                    <p>
+                       This is a virtual zoo of unusual animals which the user can navigate through 
+                       to discover information on little known and interesting specimens around the 
+                       world. Many different organisms can be found in 6 different sections of the 
+                       zoo.  Multiple forms of media for each animal/plant will be included. A quiz
+                       for each section is also playable, with a reward for completing all quizzes 
+                       correctly. <i>Adobe Director</i> was  used to create this interactive 
+                       multimedia system.
+                    </p>
+                    <p>
+                        This application was developed by a team of 5 students for INB385 at QUT 
+                        during Semester 1, 2014. 
+                    </p>
                     
-                    <div class="push-small"></div>
+                    <h3>Technologies</h3>
+                    <p> 
+                        Multimedia creation, Lingo
+                    </p>
+                    
+                    <h3>Known Bugs</h3>
+                    <ul>
+                        <li>UI <i>breaks</i> if you restart the game more than twice</li>
+                    </ul><br />
+                    
+                    <a class="button" href="https://www.dropbox.com/s/t7wcxj54b18o80h/ProfessorAnomalousOddityZoo_prototype.exe?dl=1">
+                        Download Windows application
+                    </a><br /><br />
+                    
+                    <a class="button" href="https://www.dropbox.com/s/2n91cse8ai09hu5/ProfessorAnomalousOddityZoo_prototype.dir?dl=1">
+                        Download Adobe Director source
+                    </a>                   
+
+                    <div class="push-small"></div>                 
+                </div>
+            </div>
+            
+            <!-- FoodTab -->
+            <input class="modal-state" id="food-tab" type="checkbox" />
+            <div id="food-tab-modal" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="food-tab">&#x00D7;</label>
+                    
+                    <h1>FoodTab</h1>
+                    
+                    <h3 class="overview">Overview</h3>
+                    <p>
+                       FoodTab is an electronic menu system. The overall aim of FoodTab is to not 
+                       only replace a conventional paper menu, but also add new and exciting 
+                       features that a paper menu simply cannot deliver. This project involved 
+                       creating a business plan/proposal/presentation, including SWOT Analysis, 
+                       Competitor Analysis, Digital Strategy, Technical Considerations, Cash-Flow 
+                       Projections and Return On Investment
+                    </p>
+                    <p>
+                        This presentation was created by a student for INB301 at QUT during 
+                        Semester 2, 2013. 
+                    </p>
+                    
+                    <h3>Skills</h3>
+                    <p> 
+                        Business Process Management, Analytics, Accounting
+                    </p><br />
+                    
+                    <a class="button" href="https://www.dropbox.com/s/syxze7d7i0t713n/FoodTab.ppsx?dl=1">
+                        Download Presentation
+                    </a><br /><br />               
+
+                    <div class="push-small"></div>                 
                 </div>
             </div>
             
