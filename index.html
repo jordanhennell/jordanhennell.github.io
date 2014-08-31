@@ -24,20 +24,30 @@
             
             <h2>What Is This?</h2>
             <div id="introduction">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus faucibus 
-                tortor. Fusce id nulla sit amet tellus commodo posuere sed at enim. In fermentum 
-                sit amet felis efficitur malesuada. Praesent feugiat nunc congue semper vehicula. 
-                Cras consequat diam velit, ut blandit magna rhoncus ut. Phasellus et ex sapien. 
-                Nunc vulputate orci in urna dictum pulvinar. Pellentesque hendrerit ac mi nec 
-                aliquet. Aliquam lacinia bibendum mattis. Etiam ac pharetra libero. Fusce placerat 
-                rhoncus erat, vitae pharetra enim vestibulum id. Proin elit nulla, posuere sit amet 
-                mattis in, tempor consequat nisi. 
+                <p>
+                    My name is Jordan Hennell and I'm a QUT IT student based in Brisbane, QLD. 
+                    This is  where I put up all my past projects, for you to peruse through.
+                    Think of it as an interactive CV. I'll keep adding content here as I complete 
+                    it.
+                </p>
+                
+                <p>
+                    My specialty is programming and web technologies. I pride myself on writing 
+                    clean code and creating user-centric systems. I'm currently in my final 
+                    semester of a Bachelor of IT, and I hope to continue on to a Master of IT
+                    next year.
+                </p>
+                
+                <p>
+                    Happy browsing.
+                </p>
             </div>
 
             <h2>My Projects</h2>
             <div id="menu-container">
                 <ul>
                     
+                    <!-- TripPlanner -->
                     <li>
                         <label class="menu-item" for="trip-planner">
                             <span class="font-image">&#xF01C;</span>
@@ -49,8 +59,20 @@
                         </label>
                     </li>
                     
+                    <!-- Disaster Management -->
                     <li>
-                        <label class="menu-item" for="modal-1">
+                        <label class="menu-item" for="disaster-management">
+                            <span class="font-image">&#xF01C;</span>
+                            <span class="subtitle">ASP.NET Web Application</span>
+                            Disaster Management
+                            <span class="show-on-hover">
+                                Click for more information...
+                            </span>
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="menu-item" for="coming-soon">
                             <span class="font-image">&#xF0D5;</span>
                             <span class="subtitle">Desktop</span>
                             Test 2
@@ -61,7 +83,7 @@
                     </li>
                     
                     <li>
-                        <label class="menu-item" for="modal-1">
+                        <label class="menu-item" for="coming-soon">
                             <span class="font-image">&#xF0E6;</span>
                             <span class="subtitle">Mobile</span>
                             Test 3
@@ -72,7 +94,7 @@
                     </li>
                     
                     <li>
-                        <label class="menu-item" for="modal-1">
+                        <label class="menu-item" for="coming-soon">
                             <span class="font-image">&#xF2D1;</span>
                             <span class="subtitle">Game</span>
                             Test 4
@@ -89,6 +111,16 @@
             
             <!-- modals -->
             <!-- based on Shady Alzayat's input/label modal method -->
+            
+            <!-- Coming Soon -->
+            <input class="modal-state" id="coming-soon" type="checkbox" />
+            <div id="coming-soon" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="coming-soon">&#x00D7;</label>
+                    <h2>Coming Soon...</h2>
+                    <div class="push-small"></div>
+                </div>
+            </div>
             
             <!-- TripPlanner -->
             <input class="modal-state" id="trip-planner" type="checkbox" />
@@ -107,12 +139,13 @@
                         Provider they can also add activities to cities.
                     </p>
                     <p>
-                        The web application was developed by two students for INB373 at QUT. 
-                        The applications was assessed based on functionality, not design.
+                        This web application was developed by two students for INB373 at QUT during 
+                        Semester 1, 2014. The applications was assessed based on functionality, not 
+                        design.
                     </p>
                     
                     <h3>Technologies</h3>
-                    <p> ASP.NET (C# and VB), MSSQL, IIS</p>
+                    <p> ASP.NET (C# and VB), MSSQL, IIS, HTML, CSS, JavaScript</p>
                     
                     <img class="cloud" src="images/cloudBig.png" />
                     <h3>Test Users</h3>
@@ -130,6 +163,55 @@
                     </a>
                     
                     <div class="push-small"></div>
+                </div>
+            </div>
+            
+            <!-- Disaster Management -->
+            <input class="modal-state" id="disaster-management" type="checkbox" />
+            <div id="disaster-management" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="disaster-management">&#x00D7;</label>
+                    
+                    <h2>Disaster Management</h2>
+                    
+                    <h3 class="overview">Overview</h3>
+                    <p>
+                        The Disaster Management web application was to bring together all disaster 
+                        emergency services to assist with coordinated disaster mitigation. Users
+                        of the system were able to report new incidents (eg. flood, fire, etc.), 
+                        while also finding locations of existing incidents. The application also 
+                        allows coordinaters to organise their personnel by deploying them to 
+                        incidents.
+                    </p>
+                    <p>
+                        This web application was developed by six students for INB201 at QUT during 
+                        Semester 1, 2013. 
+                    </p>
+                    
+                    <h3>Technologies</h3>
+                    <p> ASP.NET (C#), MSSQL, IIS, HTML, CSS, JavaScript, Google Maps</p>
+                    
+                    <div class="videos-container">
+                        <h3>Videos</h3>
+
+                        <h4>Register</h4>
+                        <iframe src="//www.youtube.com/embed/S9RzyWN2q-g" frameborder="0" allowfullscreen></iframe>
+
+                        <h4>Log In</h4>
+                        <iframe src="//www.youtube.com/embed/4OvlXDipLb0" frameborder="0" allowfullscreen></iframe>
+
+
+                        <h4>Report An Incident</h4>
+                        <iframe src="//www.youtube.com/embed/flcCTZVk7SM" frameborder="0" allowfullscreen></iframe>
+
+                        <h4>Edit & Resolve An Incident </h4>
+                        <iframe src="//www.youtube.com/embed/u-ce4aILkLU" frameborder="0" allowfullscreen></iframe>
+                        
+                        <h4>Manage Personnel </h4>
+                        <iframe src="//www.youtube.com/embed/5mTnjPq5vM4" frameborder="0" allowfullscreen></iframe>
+
+                        <div class="push-small"></div>
+                    </div>
                 </div>
             </div>
             
