@@ -338,6 +338,67 @@ a {
 
 }
 
+@media screen and (max-width: 500px) {
+    
+    /* list items in the menu */
+    #menu-container li .menu-item {
+        font-size: 25px;
+    }
+    
+    /* list items in the menu */
+    #menu-container li .subtitle{
+        font-size: 22px;
+        left: 68px;
+        top: 45%;
+    }
+    
+    /* image from font to use within link to show type of project */
+    #menu-container li .font-image {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+    /* list items in the menu */
+    #menu-container li .menu-item {
+        font-size: 20px;
+    }
+    
+    /* list items in the menu */
+    #menu-container li .subtitle{
+        font-size: 17px;
+        left: 54px;
+    }
+    
+    /* image from font to use within link to show type of project */
+    #menu-container li .font-image {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    /* list items in the menu */
+    #menu-container li .menu-item {
+        font-size: 15px;
+    }
+    
+    /* list items in the menu */
+    #menu-container li .subtitle{
+        font-size: 13px;
+        left: 42px;
+        top: 45%;
+    }
+    
+    /* image from font to use within link to show type of project */
+    #menu-container li .font-image {
+        font-size: 30px;
+    }
+    
+}
+
 /* ANIMATIONS */
 
 /* fade in content using opacity */
