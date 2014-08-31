@@ -41,8 +41,8 @@
                     <li>
                         <label class="menu-item" for="trip-planner">
                             <span class="font-image">&#xF01C;</span>
-                            <span class="subtitle">Web</span>
-                            Test 1
+                            <span class="subtitle">ASP.NET Web Application</span>
+                            TripPlanner
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
@@ -89,6 +89,8 @@
             
             <!-- modals -->
             <!-- based on Shady Alzayat's input/label modal method -->
+            
+            <!-- TripPlanner -->
             <input class="modal-state" id="trip-planner" type="checkbox" />
             <div id="trip-planner" class="modal">
                 <div class="modal-inner">
@@ -98,29 +100,24 @@
 
                     <h3 class="overview">Overview</h3>
                     <p>
-                        TripPlanner is a service that allows people to register and plan holidays 
-                        by adding activities that are linked to major cities in Australia. When 
-                        users sign-up, they can choose whether they want to be able to add 
-                        activities to the system as well as being able to plan trips. Once 
-                        registered, users begin by entering the <i>Trip Planning</i> page and 
-                        clicking <i>New Trip</i>. Once pressed, the cities are dynamically displayed 
-                        from the database as link buttons. Users select the city they want to visit 
-                        and then activities bound to that city are displayed, dynamically from the 
-                        database. Users select with activities they want to add to their trip, and 
-                        these are written to and stored in a trip text file in their user 
-                        directory. Once finished they click <i>End Trip</i> and from there they can 
-                        view the trip with all the activities in from their <i>Saved Activities</i> 
-                        page. If a user is an activity provider, they can add activities to cities 
-                        through the <i>Create Activity</i> page. Users input information into the 
-                        fields and then this is added to the database. If a user wants to change 
-                        their password then they can do so through the <i>Account</i> page. This is 
-                        also displays if the user is an administrator for TripPlanner or not.
+                        TripPlanner is a web application that allows people to plan holidays by 
+                        adding activities from major cities in Australia. Users select the city 
+                        they want to visit and then activities for that city are displayed. They 
+                        can add activities to a trip for later review. If a user is an Activity 
+                        Provider they can also add activities to cities.
                     </p>
+                    <p>
+                        The web application was developed by two students for INB373 at QUT. 
+                        The applications was assessed based on functionality, not design.
+                    </p>
+                    
+                    <h3>Technologies</h3>
+                    <p> ASP.NET (C# and VB), MSSQL, IIS</p>
                     
                     <img class="cloud" src="images/cloudBig.png" />
                     <h3>Test Users</h3>
                     <p>
-                        <b>Admin:</b></br>
+                        <b>Activity Provider:</b></br>
                             Username: admin123<br />
                             Password: admin123<br /><br />
                         <b>General User:</b></br>
@@ -128,7 +125,9 @@
                             Password: test123<br /><br />
                     </p>
                     
-                    <a class="button" href="#">Go To Trip Planner</a>
+                    <a class="button" href="http://www.tripplanner.somee.com/">
+                        Go To Trip Planner
+                    </a>
                     
                     <div class="push-small"></div>
                 </div>
