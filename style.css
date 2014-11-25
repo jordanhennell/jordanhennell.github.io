@@ -306,12 +306,31 @@ a.button {
 }
 
 /* ruban modal */
-#ruban-modal * {
+#ruban-modal .modal-inner {
     background-color: #529E44; /* medium green */
     color: white;
+    font-family: "Raleway";
 }
 
-    /* modal close at top of trip planner */
+#ruban-modal a {
+    color: white;
+    text-decoration: underline;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+    #ruban-modal a:hover {
+        color: #2B5224; /* medium green + grey */
+    }
+
+/* modal close at top of trip planner */
+#ruban-modal .modal-close {
+    color: white;
+}
+    
+    /* modal close when hovered should change to red */
     #ruban-modal .modal-close:hover {
         color: red;
     }
@@ -320,6 +339,7 @@ a.button {
 #ruban-modal .button {
     background-color: white;
     color: #529E44; /* medium green */
+    text-decoration: none;
 }
 
     /* grey out colours */
@@ -422,6 +442,11 @@ a.button {
     width: 90%;
     height: 360px;
 }
+
+/* modal close at top of disaster management modal */
+#disaster-management-modal .modal-close {
+    color: black;
+}
     
 /* reverse recipe modal */
 #reverse-recipe-modal .modal-inner {
@@ -435,7 +460,7 @@ a.button {
     color: white;
 }
 
-/* modal close at top of reverse recipe */
+    /* modal close at top of reverse recipe */
     #reverse-recipe-modal .modal-close:hover {
         color: black;
     }
@@ -505,7 +530,7 @@ a.button {
     
         /* food tab modal close icon when hovered over*/
         #food-tab-modal .modal-close:hover{
-            color: red;
+            color: rgb(174, 170, 160); /* cream + grey */
         }
         
     /* food tab modal close icon */
@@ -634,4 +659,10 @@ a.button {
 @font-face {
     font-family: "Cambria";
     src: url('fonts/cambria/Cambria.ttf');
+}
+
+/* Raleway */
+@font-face {
+    font-family: "Raleway"; 
+    src: url("fonts/raleway/RALEWAY-REGULAR.OTF") format('opentype');
 }
