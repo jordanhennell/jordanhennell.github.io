@@ -305,6 +305,29 @@ a.button {
     clear: both;
 }
 
+/* ruban modal */
+#ruban-modal * {
+    background-color: #529E44; /* medium green */
+    color: white;
+}
+
+    /* modal close at top of trip planner */
+    #ruban-modal .modal-close:hover {
+        color: red;
+    }
+    
+/* anchor link top act as button */
+#ruban-modal .button {
+    background-color: white;
+    color: #529E44; /* medium green */
+}
+
+    /* grey out colours */
+    #ruban-modal .button:hover {
+        color: white;
+        background-color: #2B5224; /* medium green + grey */
+    }
+
 /* trip planner modal */
 #trip-planner-modal * {
     background-color: #82CAFA; /* light sky blue */

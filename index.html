@@ -48,6 +48,18 @@
             <div id="menu-container">
                 <ul>
                     
+                    <!-- ruban -->
+                    <li>
+                        <label class="menu-item" for="ruban">
+                            <span class="font-image">&#xF01C;</span>
+                            <span class="subtitle">PHP Web Application</span>
+                            ruban
+                            <span class="show-on-hover">
+                                Click for more information...
+                            </span>
+                        </label>
+                    </li>
+                    
                     <!-- TripPlanner -->
                     <li>
                         <label class="menu-item" for="trip-planner">
@@ -72,6 +84,7 @@
                         </label>
                     </li>
                     
+                    <!-- Reverse Recipe -->
                     <li>
                         <label class="menu-item" for="reverse-recipe">
                             <span class="font-image">&#xF0E6;</span>
@@ -83,6 +96,7 @@
                         </label>
                     </li>
                     
+                    <!-- Shortest Distance -->
                     <li>
                         <label class="menu-item" for="shortest-distance">
                             <span class="font-image">&#xF0D5;</span>
@@ -94,6 +108,7 @@
                         </label>
                     </li>
                     
+                    <!-- Professor Anomalous' Oddity Zoo -->
                     <li>
                         <label class="menu-item" for="odd-zoo">
                             <span class="font-image">&#xF2D1;</span>
@@ -105,6 +120,7 @@
                         </label>
                     </li>
                     
+                    <!-- FoodTab -->
                     <li>
                         <label class="menu-item" for="food-tab">
                             <span class="font-image">&#xF0C4;</span>
@@ -134,12 +150,49 @@
                 </div>
             </div>
             
-            <!-- TripPlanner -->
+            <!-- ruban info -->
+            <input class="modal-state" id="ruban" type="checkbox" />
+            <div id="ruban-modal" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="ruban">&#x00D7;</label>
+                    <img alt="Ruban Logo" src="images/rubanLogo.png" />
+
+                    <h3 class="overview">Overview</h3>
+                    <p>
+                        ruban is an interactive multimedia experience that enables users to discover
+                        wonders and surprises in the environment in the world around them. It offers
+                        challenges grouped into <i>Escapades</i> based upon the user's geo-location. 
+                    </p>
+                    <p>
+                        Escapades contain 3 different question types: text, image recognition and 
+                        geo-tracking. Image recognition was enabled with the use of the external API  
+                        <a href="https://www.mashape.com/imagesearcher/camfind">CamFind</a>. The 
+                        prototype features 3 Escapades all based at QUT Garden's Point campus, 
+                        accessible via a mobile friendly web application.
+                    </p>
+                    <p>
+                        This web application was developed by four students for INB386 at QUT during 
+                        Semester 1, 2014. I was the developer for the project and handled all the 
+                        back-end and a majority of the front-end development. 
+                    </p>
+                    
+                    <h3>Technologies</h3>
+                    <p>PHP, MySQL, Apache HTTP Server, HTML, CSS, JavaScript</p><br />
+                    
+                    <a class="button" href="http://ruban.esy.es/" target="_blank">
+                        Go To ruban
+                    </a>
+                    
+                    <div class="push-small"></div>
+                </div>
+            </div>
+            
+            <!-- TripPlanner info -->
             <input class="modal-state" id="trip-planner" type="checkbox" />
             <div id="trip-planner-modal" class="modal">
                 <div class="modal-inner">
                     <label class="modal-close" for="trip-planner">&#x00D7;</label>
-                    <img alt="Trip Planner Logo" src="images/tripPlannerLogo.png" alt="Trip Planner Logo" />
+                    <img alt="Trip Planner Logo" src="images/tripPlannerLogo.png" />
                     <img alt="Small Cloud" src="images/cloudSmall.png" class="cloud small" />
 
                     <h3 class="overview">Overview</h3>
@@ -152,12 +205,12 @@
                     </p>
                     <p>
                         This web application was developed by two students for INB373 at QUT during 
-                        Semester 1, 2014. The applications was assessed based on functionality, not 
+                        Semester 1, 2014. The application was assessed based on functionality, not 
                         design.
                     </p>
                     
                     <h3>Technologies</h3>
-                    <p> ASP.NET (C# and VB), MSSQL, IIS, HTML, CSS, JavaScript</p>
+                    <p>ASP.NET (C# and VB), MSSQL, IIS, HTML, CSS, JavaScript</p>
                     
                     <img alt="Big Cloud" class="cloud" src="images/cloudBig.png" />
                     <h3>Test Users</h3>
@@ -178,7 +231,7 @@
                 </div>
             </div>
             
-            <!-- Disaster Management -->
+            <!-- Disaster Management info -->
             <input class="modal-state" id="disaster-management" type="checkbox" />
             <div id="disaster-management-modal" class="modal">
                 <div class="modal-inner">
@@ -205,7 +258,7 @@
                     </p>
                     
                     <h3>Technologies</h3>
-                    <p> ASP.NET (C#), MSSQL, IIS, HTML, CSS, JavaScript, Google Maps</p>
+                    <p>ASP.NET (C#), MSSQL, IIS, HTML, CSS, JavaScript, Google Maps</p>
 
                     <div class="videos-container">
                         
@@ -238,7 +291,7 @@
                 </div>
             </div>
             
-            <!-- Reverse Recipe -->
+            <!-- Reverse Recipe info -->
             <input class="modal-state" id="reverse-recipe" type="checkbox" />
             <div id="reverse-recipe-modal" class="modal">
                 <div class="modal-inner">
@@ -256,14 +309,12 @@
                         version of the app. 
                     </p>
                     <p>
-                        This iOS application was developed by four students for INB301 at QUT 
+                        This iOS application was developed by four students for INB300 at QUT 
                         during Semester 1, 2014. 
                     </p>
                     
                     <h2>Technologies</h2>
-                    <p> 
-                        Objective-C, RestFUL Web Service (PHP/JSON), Graphic Creation
-                    </p>
+                    <p>Objective-C, RestFUL Web Service (PHP/JSON), Graphic Creation</p>
                     
                     <img alt="Reverse Recipe Logo" src="images/reverseRecipeLogo.png" />
 
@@ -271,7 +322,7 @@
                 </div>
             </div>
             
-            <!-- Shortest Distance -->
+            <!-- Shortest Distance info -->
             <input class="modal-state" id="shortest-distance" type="checkbox" />
             <div id="shortest-distance-modal" class="modal">
                 <div class="modal-inner">
@@ -282,7 +333,7 @@
                     <h3 class="overview">Overview</h3>
                     <p>
                         Road networks are modeled utilising Graph Theory. For a set of locations 
-                        and possible road segments which have been randomly generated,the route of 
+                        and possible road segments which have been randomly generated, the route of 
                         the shortest path from a point to all other points can be found. A 
                         Minimum-Spanning Tree can also be calculated, as well as it's shortest 
                         path. This system employs the use of <i>Dijkstra's Single Source Shortest 
@@ -296,9 +347,7 @@
                     </p>
                     
                     <h3>Technologies</h3>
-                    <p> 
-                        C++
-                    </p><br />
+                    <p>C++</p><br />
                     
                     <a class="button" href="https://www.dropbox.com/s/9kyc9hxiqvufkgm/ShortestDistanceSource.zip?dl=1">
                         Download Source Code
@@ -308,7 +357,7 @@
                 </div>                
             </div>
                 
-            <!-- Professor Anomalous' Oddity Zoo -->
+            <!-- Professor Anomalous' Oddity Zoo info -->
             <input class="modal-state" id="odd-zoo" type="checkbox" />
             <div id="odd-zoo-modal" class="modal">
                 <div class="modal-inner">
@@ -353,7 +402,7 @@
                 </div>
             </div>
             
-            <!-- FoodTab -->
+            <!-- FoodTab info -->
             <input class="modal-state" id="food-tab" type="checkbox" />
             <div id="food-tab-modal" class="modal">
                 <div class="modal-inner">
@@ -376,9 +425,7 @@
                     </p>
                     
                     <h3>Skills</h3>
-                    <p> 
-                        Business Process Management, Analytics, Accounting
-                    </p><br />
+                    <p>Business Process Management, Analytics, Accounting </p><br />
                     
                     <a class="button" href="https://www.dropbox.com/s/syxze7d7i0t713n/FoodTab.ppsx?dl=1">
                         Download Presentation
