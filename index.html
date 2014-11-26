@@ -27,15 +27,14 @@
             <div id="introduction">
                 <p>
                     My name is Jordan Hennell and I'm a QUT IT student based in Brisbane, QLD. 
-                    This is  where I put up all my past projects, for you to peruse through.
-                    Think of it as an interactive CV. I'll keep adding content here as I complete 
-                    it.
+                    This is  where I put up all my past projects, for you to peruse. Think of it as
+                    an interactive CV. I'll keep adding content here as I complete it.
                 </p>
                 
                 <p>
                     My specialty is programming and web technologies. I pride myself on writing 
-                    clean code and creating user-centric systems. I'm currently in my final 
-                    semester of a Bachelor of IT, and I hope to continue on to a Master of IT
+                    clean code and creating user-centric systems. I'll be graduating from a 
+                    Bachelor of IT in a few weeks, and I hope to continue on to a Master of IT
                     next year.
                 </p>
                 
@@ -102,6 +101,18 @@
                             <span class="font-image">&#xF0D5;</span>
                             <span class="subtitle">C++ Desktop Program</span>
                             Shortest Distance
+                            <span class="show-on-hover">
+                                Click for more information...
+                            </span>
+                        </label>
+                    </li>
+                    
+                    <!-- Recommendation Evaluation -->
+                    <li>
+                        <label class="menu-item" for="recommendation-evaluation">
+                            <span class="font-image">&#xF0D5;</span>
+                            <span class="subtitle">Java Desktop Program</span>
+                            Recommendation Evaluation
                             <span class="show-on-hover">
                                 Click for more information...
                             </span>
@@ -356,6 +367,61 @@
                     <div class="push-small"></div>                   
                 </div>                
             </div>
+            
+            <!-- Recommendation Evaluation -->
+            <input class="modal-state" id="recommendation-evaluation" type="checkbox" />
+            <div id="recommendation-evaluation-modal" class="modal">
+                <div class="modal-inner">
+                    <label class="modal-close" for="recommendation-evaluation">&#x00D7;</label>
+                    
+                    <h2>Recommendation Evaluation</h2>
+                    
+                    <h3 class="overview">Overview</h3>
+                    <p>
+                        Recommendation algorithms are commonly used in e-commerce and social media 
+                        websites to market relevant content to users. The Recommender Evaluation 
+                        project involved developing and implementing algorithms to recommend movies 
+                        based on user information, and then evaluating these recommendations. 
+                    </p>
+                    <p> 
+                        The deliverables required to complete this project were: 
+                    </p>
+                    <ul>
+                        <li>Data pre-processing</li> 
+                        <li>Implementing four distinct recommendation algorithms</li>
+                        <li style="list-style: none">
+                            <ul>
+                                <li>Item Based Collaborative Filtering</li>
+                                <li>User Based Collaborative Filtering</li>
+                                <li>Latent Dirichlet allocation</li>
+                                <li>Word-based Pattern Mining</li>
+                            </ul>
+                        </li>
+                        <li>Producing an evaluation of the recommendations using two metrics</li>
+                        <li style="list-style: none">
+                            <ul>
+                                <li>Precision: how relevant the recommendations are</li>
+                                <li>Recall: how many relevant recommendations have been found</li>
+                            </ul>
+                        </li>
+                        <li>Technical report</li>
+                    </ul>
+                    <p>
+                        This application was developed by five students for INB302 at QUT during 
+                        Semester 2, 2014. I was one of the two programmers in the group. For 
+                        showcase purposes the results were summarised using a website (see below).
+                    </p>
+                    
+                    <h3>Technologies</h3>
+                    <p>Java, MySQL, Flat Files, LensKit API</p><br />
+                    
+                    <a class="button" href="http://aar.esy.es/">
+                        See Results
+                    </a>
+
+                    <div class="push-small"></div>                   
+                </div>                
+            </div>
                 
             <!-- Professor Anomalous' Oddity Zoo info -->
             <input class="modal-state" id="odd-zoo" type="checkbox" />
@@ -370,7 +436,7 @@
                        This is a virtual zoo of unusual animals which the user can navigate through 
                        to discover information on little known and interesting specimens around the 
                        world. Many different organisms can be found in 6 different sections of the 
-                       zoo.  Multiple forms of media for each animal/plant will be included. A quiz
+                       zoo. Multiple forms of media for each animal/plant will be included. A quiz
                        for each section is also playable, with a reward for completing all quizzes 
                        correctly. <i>Adobe Director</i> was  used to create this interactive 
                        multimedia system.
